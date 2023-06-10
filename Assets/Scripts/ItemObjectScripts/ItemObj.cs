@@ -18,6 +18,8 @@ public enum ItemType
 {
     Equipment,//‘•”õ
     Consumable,//Á”ïŒ^
+    Heal,
+    PowerUP,
     //Passive
 }
 

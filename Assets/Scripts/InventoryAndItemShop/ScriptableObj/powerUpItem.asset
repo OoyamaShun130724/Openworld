@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f39d3dc3f5f244698ca6770add287d, type: 3}
   m_Name: powerUpItem
   m_EditorClassIdentifier: 
-  _image: {fileID: 0}
+  _sprite: {fileID: -1845769802, guid: 7b505e3d23f1b4249af6c7ad29cb81ef, type: 3}
   _type: 2
-  _cost: 0
-  _description: "\u653B\u6483\u529B\u304C\u4E0A\u304C\u308B\u602A\u3057\u3044\u8349"
+  _cost: 500
+  _description: "\u4FA1\u683C\u3000500G\n\u653B\u6483\u529B\u304C\u4E0A\u304C\u308B\u602A\u3057\u3044\u8349"
   _itemName: "\u602A\u3057\u3044\u8349"
   _itemcount: 0
   _powerUpOffencivePower: 5

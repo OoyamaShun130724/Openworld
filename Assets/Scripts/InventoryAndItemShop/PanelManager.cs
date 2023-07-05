@@ -14,6 +14,7 @@ public class PanelManager : MonoBehaviour
     {
         _panel.SetActive(false);
         _player._playerState = Player.state.Wandering;
+        _player._cvcam.enabled = true;
     }
     public void Open()
     {

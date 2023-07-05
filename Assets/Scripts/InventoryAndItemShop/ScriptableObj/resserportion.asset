@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc89bcf8fc2250745b627be9f27d7bdc, type: 3}
   m_Name: resserportion
   m_EditorClassIdentifier: 
-  _image: {fileID: 1730391141, guid: d3923a9bc8d8aa743b205a626267403d, type: 3}
+  _sprite: {fileID: 1730391141, guid: d3923a9bc8d8aa743b205a626267403d, type: 3}
   _type: 1
-  _cost: 200
-  _description: "HP\u304C\uFF15\u56DE\u5FA9\u3059\u308B\u30DD\u30FC\u30B7\u30E7\u30F3\n"
+  _cost: 50
+  _description: "\u4FA1\u683C\u300050G\nHP\u304C\uFF15\u56DE\u5FA9\u3059\u308B\u30DD\u30FC\u30B7\u30E7\u30F3\n"
   _itemName: "\u4E0B\u7D1A\u30DD\u30FC\u30B7\u30E7\u30F3"
   _itemcount: 0
   _healValue: 5

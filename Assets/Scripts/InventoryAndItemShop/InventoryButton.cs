@@ -26,7 +26,7 @@ public class InventoryButton : MonoBehaviour, IPointerEnterHandler, IPointerExit
     {
         _dataBase._discription.text = _dataBase._itemObjs[_id]._description;
         _dataBase._image.enabled = true;
-        _dataBase._image.sprite = _dataBase._itemObjs[_id]._image;
+        _dataBase._image.sprite = _dataBase._itemObjs[_id]._sprite;
     }
     public void OnPointerExit(PointerEventData eventData)
     {

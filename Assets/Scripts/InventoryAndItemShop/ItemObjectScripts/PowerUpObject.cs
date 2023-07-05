@@ -11,8 +11,8 @@ public class PowerUpObject : ItemObj
     public override void UseItem()
     {
         var player = FindObjectOfType<Player>();
-        player._offencivePower += _powerUpOffencivePower;
-        player._diffensivePower += _powerUppowerUpDiffensivePower;
+        player._offencivePower = Mathf.Min(player._offencivePower+_powerUpOffencivePower,player._offenciveLimit);
+        player._diffensivePower =Mathf.Min(player._diffensivePower+_powerUppowerUpDiffensivePower,player._diffenciveLimit);
     }
 
 }

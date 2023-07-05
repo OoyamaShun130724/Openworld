@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public abstract class ItemObj : ScriptableObject
 {
     //アイテムすべてに必要な変数を列挙各アイテム毎に必要な変数は継承先に記載する
-    [Header("アイテムのプレハブ"),SerializeField] public Sprite _image;
+    [Header("アイテムのプレハブ"),SerializeField] public Sprite _sprite;
     [Header("アイテムのタイプ")] public ItemType _type;
     [Header("値段")] public int _cost;
     [TextArea(10, 10)] public string _description;
@@ -18,9 +18,9 @@ public abstract class ItemObj : ScriptableObject
 public enum ItemType
 {
     Equipment,//装備
-    //Consumable,//消費型
+    Consumable,//消費型
     Heal,//回復
     PowerUP,//パワーアップアイテム
-
+    Damage,
 }
 

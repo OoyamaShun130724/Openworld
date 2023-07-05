@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc89bcf8fc2250745b627be9f27d7bdc, type: 3}
   m_Name: highportion
   m_EditorClassIdentifier: 
-  _image: {fileID: 355637437, guid: d3923a9bc8d8aa743b205a626267403d, type: 3}
+  _sprite: {fileID: 355637437, guid: d3923a9bc8d8aa743b205a626267403d, type: 3}
   _type: 0
   _cost: 300
-  _description: "HP\u304C50\u56DE\u5FA9\u3059\u308B\u4E0A\u7D1A\u30DD\u30FC\u30B7\u30E7\u30F3"
+  _description: "\u4FA1\u683C\u3000300G\nHP\u304C50\u56DE\u5FA9\u3059\u308B\u4E0A\u7D1A\u30DD\u30FC\u30B7\u30E7\u30F3"
   _itemName: "\u30CF\u30A4\u30DD\u30FC\u30B7\u30E7\u30F3"
   _itemcount: 0
   _healValue: 50

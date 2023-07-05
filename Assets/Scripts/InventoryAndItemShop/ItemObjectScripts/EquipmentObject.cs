@@ -12,7 +12,16 @@ public class EquipmentObject : ItemObj
     }
     public override void UseItem()
     {
-        var _player = FindObjectOfType<Player>();
-        
+        var player = FindObjectOfType<Player>();
+        if (player._equipped)
+        {
+            _itemcount++;
+        }
+        else
+        {
+            player._gunPrefab.SetActive(true);
+            player._equipped = true;
+            player._offencivePower = Mathf.Min(player._offencivePower + _offencivePower, player._offenciveLimit);
+        }
     }
 }

@@ -8,14 +8,18 @@ public class GenerateShopItemList : MonoBehaviour
     [SerializeField] Button _button;
     [SerializeField] GameObject _shopDataLis;
     [SerializeField] public GameObject _InventoryTarget;
+    [SerializeField] public Player _player;
     ShopButton _sb;
-    public Player _player;  
-    
+   
+    private void OnEnable()
+    {
+        _dataBase = GameObject.FindObjectOfType<ShopDataBase>();
+        _dataBase._playerGold.text = _player._gold.ToString() + "G";
+    }
     public void Start()
     {
         _inventory = GameObject.FindObjectOfType<Inventory>();
         _player = GameObject.FindObjectOfType<Player>();
-        _dataBase = GameObject.FindObjectOfType<ShopDataBase>();
         GenerateShopItemButton();
     }
     public void GenerateShopItemButton()
@@ -32,6 +36,7 @@ public class GenerateShopItemList : MonoBehaviour
             _sb._cost = _dataBase._itemObjs[i]._cost;
             _sb._gsl = this;
             _sb._inventory =_inventory;
+            _sb._player = _player;
         }
     }
 }
